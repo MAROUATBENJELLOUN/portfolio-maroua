@@ -629,16 +629,15 @@
     <form class="contact-form" action="https://formspree.io/f/maqdljne" method="POST">
       <div class="form-group">
         <label>Votre nom</label>
-        <input type="text" placeholder="Votre nom complet">
+<input type="text" name="MAROUA" placeholder="Maroua Touimi Benjelloun" required>
       </div>
       <div class="form-group">
         <label>Votre email</label>
-        <input type="email" placeholder="votre@email.com">
+<input type="email" name="email" placeholder="benjellounmaroua1@gmail.com" required>
       </div>
       <div class="form-group">
         <label>Votre message</label>
-        <textarea placeholder="Parlez-moi de votre projet..."></textarea>
-      </div>
+<textarea name="message" placeholder="Parlez-moi de votre projet..." required></textarea>      </div>
       <button type="submit" class="btn-primary" style="cursor:pointer;border:none;width:fit-content;">Envoyer le message</button>
     </form>
   </div>
@@ -701,13 +700,7 @@
   reveals.forEach(el => observer.observe(el));
 
   // Form
-  function handleSubmit(e) {
-    e.preventDefault();
-    const btn = e.target.querySelector('button');
-    btn.textContent = 'Message envoyé ✓';
-    btn.style.background = '#6ABF8A';
-    setTimeout(() => { btn.textContent = 'Envoyer le message'; btn.style.background = ''; }, 3000);
-  }
+ 
 </script>
 </body>
 </html>
