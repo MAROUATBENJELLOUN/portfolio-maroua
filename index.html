@@ -670,36 +670,7 @@
   <div class="footer-copy">© 2025 — Assistante Digitale & Créatrice de Contenu</div>
 </footer>
 
-<script>
-  // Cursor
-  const cursor = document.getElementById('cursor');
-  const follower = document.getElementById('follower');
-  let mx = 0, my = 0, fx = 0, fy = 0;
-  document.addEventListener('mousemove', e => {
-    mx = e.clientX; my = e.clientY;
-    cursor.style.transform = `translate(${mx - 5}px, ${my - 5}px)`;
-  });
-  function animFollower() {
-    fx += (mx - fx - 18) * 0.12;
-    fy += (my - fy - 18) * 0.12;
-    follower.style.transform = `translate(${fx}px, ${fy}px)`;
-    requestAnimationFrame(animFollower);
-  }
-  animFollower();
 
-  // Nav scroll
-  window.addEventListener('scroll', () => {
-    document.getElementById('nav').classList.toggle('scrolled', window.scrollY > 50);
-  });
-
-  // Reveal on scroll
-  const reveals = document.querySelectorAll('.reveal');
-  const observer = new IntersectionObserver(entries => {
-    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
-  }, { threshold: 0.12 });
-  reveals.forEach(el => observer.observe(el));
-
-  // Form
  
 </script>
 </body>
