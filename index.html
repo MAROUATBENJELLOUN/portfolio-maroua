@@ -1,28 +1,83 @@
-<form action="https://formspree.io/f/maqdljne" method="POST" class="contact-form">
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Maroua Touimi Benjelloun — Créatrice de Contenu</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Jost:wght@200;300;400&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-  <div class="form-group">
-    <label>Votre nom</label>
-    <input type="text" name="name" placeholder="Votre nom complet" required>
-  </div>
+:root {
+  --bg: #ffffff;
+  --surface: #f9f7f2;
+  --card: #ffffff;
+  --border: #e6e1d7;
+  --accent: #c6a96b;
+  --accent-light: #e2c79a;
+  --text: #c6a96b;
+  --muted: #bfae8f;
+  --serif: 'Cormorant Garamond', Georgia, serif;
+  --sans: 'Jost', sans-serif;
+}
 
-  <div class="form-group">
-    <label>Votre email</label>
-    <input type="email" name="email" placeholder="votre@email.com" required>
-  </div>
+html { scroll-behavior: smooth; }
 
-  <div class="form-group">
-    <label>Votre message</label>
-    <textarea name="message" placeholder="Parlez-moi de votre projet..." required></textarea>
-  </div>
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--sans);
+  font-weight: 300;
+  font-size: 15px;
+  line-height: 1.75;
+  overflow-x: hidden;
+}
 
-  <!-- Désactive le captcha automatique -->
-  <input type="hidden" name="_captcha" value="false">
+.btn-primary {
+  background: var(--accent);
+  color: #ffffff;
+  padding: 0.85rem 2rem;
+  text-decoration: none;
+  font-size: 0.72rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  transition: all 0.25s;
+  font-family: var(--sans);
+  font-weight: 400;
+}
 
-  <!-- Redirection après envoi (optionnel) -->
-  <input type="hidden" name="_next" value="https://marouatbenjelloun.github.io/portfolio-maroua/">
+.contact-email-btn {
+  display: inline-block;
+  background: var(--accent);
+  color: #ffffff;
+  padding: 1rem 3rem;
+  font-size: 0.75rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-family: var(--sans);
+  font-weight: 400;
+  transition: background 0.25s;
+}
 
-  <button type="submit" class="btn-primary" style="cursor:pointer;border:none;width:fit-content;">
-    Envoyer le message
-  </button>
+.tl-item::before {
+  content: '';
+  position: absolute;
+  left: -4px; top: 2.5rem;
+  width: 9px; height: 9px;
+  border-radius: 50%;
+  border: 1px solid var(--accent);
+  background: #ffffff;
+}
 
-</form>
+</style>
+</head>
+<body>
+
+<h1 style="text-align:center; margin-top:100px; font-family: var(--serif);">
+Version fond blanc & écriture beige appliquée ✅
+</h1>
+
+</body>
+</html>
